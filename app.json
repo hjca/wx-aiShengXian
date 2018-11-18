@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/tabBar/index/index",
+    "pages/tabBar/supermarket/supermarket",
+    "pages/tabBar/shopCart/shopCart",
+    "pages/tabBar/userInfo/userInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd600",
+    "navigationBarTitleText": "定位中...",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ffd600",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/index/index",
+        "text": "首页",
+        "iconPath": "static/images/noIndex.png",
+        "selectedIconPath": "static/images/yesIndex.png"
+      },
+      {
+        "pagePath": "pages/tabBar/supermarket/supermarket",
+        "text": "闪送超市",
+        "iconPath": "static/images/noQuck.png",
+        "selectedIconPath": "static/images/yesQuck.png"
+      },
+      {
+        "pagePath": "pages/tabBar/shopCart/shopCart",
+        "text": "购物车",
+        "iconPath": "static/images/noShopCart.png",
+        "selectedIconPath": "static/images/yesShopCart.png"
+      },
+      {
+        "pagePath": "pages/tabBar/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "static/images/noMine.png",
+        "selectedIconPath": "static/images/yesMine.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "address",
+      "pages": [
+        "addressList/addressList",
+        "addInfo/addInfo"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/tabBar/shopCart/shopCart": {
+      "network": "all",
+      "packages": [
+        "address"
+      ]
+    }
+  }
+}

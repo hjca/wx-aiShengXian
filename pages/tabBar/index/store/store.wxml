@@ -1,0 +1,48 @@
+<!-- 便利店 -->
+<template name="convenientStore">
+  <view class='indexStore'>
+
+    <!-- title -->
+    <view class='storeTitle'>
+      <image src='../../../../static/images/store.png'></image>
+    </view>
+
+    <!-- 菜单 -->
+    <view class='titleMenu'>
+      <!-- 热销榜 -->
+      <image src='http://img01.bqstatic.com//upload/activity/2016092417285271.jpg@90Q.jpg'></image>
+
+      <!-- 天天特价 -->
+      <image src='http://img01.bqstatic.com//upload/activity/2017030919451621.jpg@90Q.jpg'></image>
+    </view>
+
+    <!-- 便利店分类 -->
+    <view class='storeClassify'>
+      <view 
+        class='menuClassItem'
+        wx:for="{{ storeList.daymenu }}"
+        wx:for-item="item"
+        wx:for-index="index"
+        wx:key="unique">
+        <image src='{{ item.imgurl }}' lazy-load='true'></image>
+        <text>{{ item.menuname }}</text>
+      </view>
+    </view>
+
+    <!-- 分类 -->
+    <view class='classList'>
+      <view class='classListItem'
+        wx:for="{{ storeList.classify }}"
+        wx:for-item="item"
+        wx:for-index="index"
+        wx:key="unique">
+        <view class='classLeft'>
+          <view class='classTitle'>{{ item.classifyTitle }}</view>
+          <view class='classTitles'>{{ item.classifyname }}</view>
+        </view>
+        <image src='{{ item.imgurl }}' lazy-load='true'></image>
+      </view>
+    </view>
+
+  </view>
+</template>

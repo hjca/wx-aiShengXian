@@ -1,0 +1,15 @@
+<view class="_shopItem">
+  <view class='_leftImg'>
+    <image src='{{ shopInfo.shopImg }}' lazy-load='true'></image>
+  </view>
+
+  <view class='_rightShopInfo'>
+    <!-- 商品名称 -->
+    <text>{{ shopInfo.shopName }}</text>
+
+    <!-- 价钱 -->
+    <view class='_shopPrice'>￥{{ shopInfo.shopPrice }}</view>
+
+    <view class='_addCart' catchtap='_addShopCart'>+</view>
+  </view>
+</view>

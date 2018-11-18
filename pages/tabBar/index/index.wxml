@@ -1,0 +1,38 @@
+<!-- 首页 -->
+<view class='shopIndex'>
+  <!-- 轮播图 -->
+  <view class='indexSwiper'>
+    <swiper
+      class='swiperArea'
+      indicator-dots='{{ swiperParams.indicatorDots }}'
+      autoplay='{{ swiperParams.autoplaySwiper }}'
+      interval='{{ swiperParams.intervalTime }}'
+      circular='{{ swiperParams.circular }}'
+      indicator-active-color='{{ swiperParams.indicatorColor }}'
+      >
+      <block wx:for="{{ swiperData }}" wx:for-index="idx" wx:for-item="item" wx:key="item.swiperId">
+         <swiper-item>
+            <image src="{{ item.imgurl }}"></image>
+        </swiper-item>
+      </block>
+
+    </swiper>
+  </view>
+
+  <!-- 菜单 -->
+  <import src="indexMenu/indexMenu.wxml"/>
+  <template is="indexMenu"/>
+
+  <!-- 天天便利店 -->
+  <view class='convenienceStore'>
+    <import src="store/store.wxml"/>
+    <template is="convenientStore" data="{{ storeList:dayDataClassify }}"/>
+  </view>
+
+  <!-- 牛奶面包 -->
+  <view class='storeBreadClass'>
+    <import src="bread/bread.wxml"/>
+    <template is="breadClass" data="{{ milkbreadList:milkbreadLists }}"/>
+  </view>
+
+</view>

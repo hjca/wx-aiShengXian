@@ -1,0 +1,27 @@
+<template name="indexMenu">
+  <view class='indexMenu'>
+    <!-- 签到 -->
+    <view class='nav-item'>
+      <image src='../../../../static/images/signIn.png'></image>
+      <text>每日签到</text>
+    </view>
+
+    <!-- 疯狂秒杀 -->
+    <view class='nav-item'>
+      <image src='../../../../static/images/secKilling.png'></image>
+      <text>疯狂秒杀</text>
+    </view>
+
+    <!-- 新鲜直供 -->
+    <view class='nav-item'>
+      <image src='../../../../static/images/fresh.png'></image>
+      <text>新鲜直供</text>
+    </view>
+
+    <!-- 整箱购 -->
+    <view class='nav-item'>
+      <image src='../../../../static/images/busBuy.png'></image>
+      <text>整箱购</text>
+    </view>
+  </view>
+</template>

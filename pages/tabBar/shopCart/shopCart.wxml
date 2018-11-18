@@ -1,0 +1,40 @@
+<!-- 购物车 -->
+<view class='shopCartList'>
+  <!-- 空的情况下 -->
+  <view class='emptyAreas' wx:if="{{isEmpty == 0}}">
+    <import src="emptyShopCart/empty.wxml"/>
+    <template is="emptyCart"/>
+  </view>
+
+  <!-- 有商品的情况下 -->
+  <view class='haveCartShop' wx:elif="{{isEmpty == 1}}">
+    <import src="successTime/successTime.wxml"/>
+    <template is="successTime"/>
+
+    <view class='shopListShow'>
+      <checkbox-group>
+        <view class='shopItem' wx:for="{{ shopList }}" wx:for-item="item" wx:for-index="index" wx:key="{{ index }}">
+          <checkbox color="#ffd600"/>
+          <view class='shopInfoRight'>
+            <image class='infoImg' src='{{ item.shopImg }}'></image>
+
+            <view class='infos'>
+              <text class='shopName'>{{ item.shopName }}</text>
+
+              <view class='priceNum'>
+                <text class='infoPrice'>￥{{ item.shopPrice }}</text>
+
+                <!-- 步进器 -->
+                <view class='numStep'>
+                  <view class='resoure' catchtap='numJian' data-shopitem="{{ item }}">-</view>
+                  <text class='count'>{{ item.shopNum }}</text>
+                  <view class='add' catchtap='numAdd' data-shopitem="{{ item }}">+</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

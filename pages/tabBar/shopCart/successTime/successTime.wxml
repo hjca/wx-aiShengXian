@@ -1,0 +1,19 @@
+<!-- 空购物车 -->
+<template name="successTime">
+  <view class='timeArea1'>
+    <image src='../../../static/images/store.png'></image>
+  </view>
+
+  <view class='timeArea2' catchtap='showAddressList'>
+    <view class='inforLeft'>
+      <view class='time'>
+        <text class='time1'>收货时间</text>
+        <text class='time2'>一小时送达可预定</text>
+      </view>
+
+      <view class='userAddress'>￥0起送，22:00前满￥30免运费，22:00后满￥69免运费</view>
+    </view>
+
+    <view class='inforRight'>></view>
+  </view>
+</template>

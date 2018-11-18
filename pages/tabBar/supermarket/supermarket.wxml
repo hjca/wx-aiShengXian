@@ -1,0 +1,35 @@
+<!-- 闪送超市 -->
+<view class="flashSupermarket">
+  <!-- left菜单 -->
+  <scroll-view scroll-y class='leftMenu'>
+    <view class='{{ flag == index ? "selectMenu" : "menuItem" }}'
+      wx:for="{{ menuList }}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="{{ item.menuId }}"
+      data-index="{{ index }}"
+      catchtap='chooseMenu'>{{ item.menuName }}</view>
+  </scroll-view>
+
+  <!-- 右边的商品列表 -->
+  <view class='rightShopList'>
+    <!-- 筛选条件 -->
+    <view class='screening'>
+      <text>综合排名</text>
+      <text>按价格</text>
+      <text>按销量</text>
+    </view>
+    <!-- 商品列表集合 -->
+    <scroll-view class='shopListSupermarket'
+      scroll-y="true">
+      <shopitem
+        wx:for="{{ shopList }}"
+        wx:for-index="index"
+        wx:for-item="item"
+        wx:key="{{ item.shopId }}"
+        shopInfo="{{ item }}"
+        data-item="{{ item }}" 
+        bind:addShopCart="addShopCart"></shopitem>
+    </scroll-view>
+  </view>
+</view>

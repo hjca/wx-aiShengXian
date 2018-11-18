@@ -1,0 +1,38 @@
+<!-- 便利店 -->
+<template name="breadClass">
+  <view class='breadArea'>
+
+    <!-- 标题头 -->
+    <view class='breadTitle'>
+      <text>牛奶面包</text>
+      <view class='breadMore'>
+        <text>更多</text>
+        <text>></text>
+      </view>
+    </view>
+
+    <!-- 头部标题图片 -->
+    <view class='breadTitleImg'>
+      <image src='{{ milkbreadList.title }}' lazy-load='true'></image>
+    </view>
+
+    <view class='shopListMilk'>
+      <view class='milkItem'
+        wx:for="{{ milkbreadList.shopList}}"
+        wx:for-item="item"
+        wx:for-index="index"
+        wx:key="{{ item.shopId }}">
+        <image lazy-load='true' src='{{ item.shopImg }}'></image>
+        <text class='shopName'>{{ item.shopName }}</text>
+        <view class='addShopCart'>
+          <text class='priceShop'>￥{{ item.shopPrice }}</text>
+          <image 
+            src='../../../../static/images/add.png'
+            data-item="{{ item }}" 
+            catchtap='addShopCart'></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</template>

@@ -1,0 +1,157 @@
+.emptyArea{
+  height: auto;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyArea image{
+  width: 192rpx;
+  height: 192rpx;
+}
+.emptyArea text{
+  font-size: 35rpx;
+  color: #999;
+  margin: 20rpx 0;
+}
+.emptyArea button{
+  border: 1px solid #e0e0e0;
+  color: #999;
+}
+.haveCartShop{
+  height: auto;
+}
+.timeArea1{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.timeArea1 image{
+  height: 100%;
+}
+.timeArea2{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.inforLeft{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.time{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 56rpx;
+}
+.time1,.time2{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: 600;
+}
+.time2{
+  color: #ffd600;
+}
+.userAddress{
+  font-size: 30rpx;
+  color: #999;
+  line-height: 56rpx;
+}
+.inforRight{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  font-size: 30rpx;
+}
+.shopListShow{
+  height: auto;
+}
+.shopListShow .shopItem{
+  height: 270rpx;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.shopInfoRight{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.shopInfoRight .infoImg{
+  width: 160rpx;
+  height: 160rpx;
+}
+.shopInfoRight .infos{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+.shopInfoRight .infos .shopName{
+  display: block;
+  color: #333;
+  font-size: 30rpx;
+  height: 87rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 40rpx;
+}
+.shopInfoRight .infos .priceNum{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.shopInfoRight .infos .priceNum .infoPrice{
+  font-size: 30rpx;
+  color: #ff0000;
+}
+.shopInfoRight .numStep{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopInfoRight .numStep .count{
+  font-size: 45rpx;
+  color: #333;
+  margin: 0 20rpx;
+}
+.shopInfoRight .numStep .resoure,
+.shopInfoRight .numStep .add{
+  width: 50rpx;
+  height: 50rpx;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  color: #ff0000;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 40rpx;
+}

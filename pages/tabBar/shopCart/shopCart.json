@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"购物车",
+  "usingComponents": {
+    "van-icon": "/components/vant-weapp/dist/icon/index"
+  }
+}

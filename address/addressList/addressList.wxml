@@ -1,0 +1,27 @@
+<!-- 地址列表 -->
+<view class='shopAddressList'>
+  <view class='addressItem'>
+
+    <view class='addressInfo'>
+
+      <view class='addressUser'>
+        <view class='userInfo'>
+          <text class='name'>吴辉</text>
+          <text class='phone'>13716055450</text>
+        </view>
+
+        <view class='detailAddress'>北京市昌平区立水桥奥北北区1-2-510北京市昌平区立水桥奥北北区1-2-510北京市昌平区立水桥奥北北区1-2-510</view>
+      </view>
+
+      <view class='addressEdit'>
+        <image src='../../static/images/edit.png'></image>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class='addAddressButton'>
+    <view class='addAddress' catchtap='addAddress'>+新增地址</view>
+  </view>
+</view>

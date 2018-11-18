@@ -1,0 +1,54 @@
+.flashSupermarket{
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftMenu{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #f8f8f8;
+}
+.menuItem,.selectMenu{
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 30rpx;
+  color: #333;
+  text-align: center;
+  line-height: 90rpx;
+}
+.selectMenu{
+  border-left: 10rpx solid #FFD600;
+  background: #fff;
+  font-weight: bold;
+}
+.rightShopList{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.screening{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+.screening text{
+  width: auto;
+  height: auto;
+  font-size: 30rpx;
+  color: #333;
+}
+.shopListSupermarket{
+  height: 90%;
+  width: 100%;
+}

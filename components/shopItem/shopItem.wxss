@@ -1,0 +1,49 @@
+._shopItem{
+  height: 220rpx;
+  padding: 12rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+._leftImg{
+  width: 192rpx;
+  height: 192rpx;
+}
+._leftImg image{
+  width: 100%;
+  height: 100%;
+}
+._rightShopInfo{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 12rpx;
+  position: relative;
+}
+._rightShopInfo text{
+  font-size: 30rpx;
+  color: #333;
+}
+._shopPrice{
+  color: #ff3800;
+  font-size: 30rpx;
+}
+._addCart{
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #ff3800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}

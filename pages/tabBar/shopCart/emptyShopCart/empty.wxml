@@ -1,0 +1,8 @@
+<!-- 空购物车 -->
+<template name="emptyCart">
+  <view class='emptyArea'>
+    <image src='../../../static/images/empty.png'></image>
+    <text>亲，购物车空空的耶~</text>
+    <button plain="true" catchtap='goBuyShop'>去逛逛</button>
+  </view>
+</template>
